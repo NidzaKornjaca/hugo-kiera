@@ -252,12 +252,10 @@ a {
 
 .image, figure img, img {
   width: 100%;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 .full-image, figure.full img, img[src*="full"] {
   width: 100%;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @supports (width: 100vw) {
@@ -273,7 +271,6 @@ a {
 
 .mid-image, figure.mid img, img[src*="mid"] {
   width: 100%;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @supports (width: 100vw) {
@@ -299,7 +296,6 @@ a {
   width: 300px;
   float: left;
   margin: 0 1em 1em -3em;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @media only screen and (max-width: 800px) {
@@ -314,7 +310,6 @@ a {
   width: 300px;
   float: right;
   margin: 0 -3em 1em 1em;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @media only screen and (max-width: 800px) {
