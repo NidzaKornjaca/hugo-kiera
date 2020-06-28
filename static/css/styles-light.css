@@ -164,12 +164,8 @@ main h1 {
   margin-bottom: 1rem;
 }
 
-footer {
+.footer {
   border-top: solid 1px #cecece;
-}
-
-footer h6 {
-  font-size: 0.8em;
 }
 
 textarea, input {
