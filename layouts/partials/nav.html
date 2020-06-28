@@ -1,5 +1,7 @@
 {{ $currentPage := . }}
 <nav>
+    <a href="{{ relLangURL "/" }}"><span class="site-logo">{{ .Site.Title | markdownify }}</span>
+    </a>
     <ul>
         {{ range .Site.Menus.main }}
         <li>

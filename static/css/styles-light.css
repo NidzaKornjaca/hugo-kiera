@@ -16,6 +16,11 @@ time {
   font-family: "Roboto", sans-serif;
 }
 
+.site-logo {
+  font-size: 2em;
+  color: #333333;
+}
+
 #container {
   margin: 0;
   padding: 0;
@@ -37,30 +42,6 @@ time {
   }
 }
 
-#container header {
-  margin-bottom: 1em;
-}
-
-#container header h1 {
-  font-size: 2.4rem;
-}
-
-#container header h1 a {
-  color: #000000;
-}
-
-#container header ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  float: right;
-}
-
-#container header ul li {
-  margin-left: 1em;
-}
-
 @media only screen and (max-width: 800px) {
   #container header ul {
     float: none;
@@ -71,9 +52,13 @@ time {
 }
 
 #container nav {
-  border-bottom: solid 3px #cecece;
-  padding-bottom: 0.5em;
-  font-family: "Ruda", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-bottom: solid 3px #666666;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #container nav ul {
@@ -81,7 +66,6 @@ time {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: flex-end;
 }
 
 #container nav ul li {
@@ -89,7 +73,7 @@ time {
 }
 
 #container nav ul li a.active {
-  border-bottom: 0.5em solid #666666;
+  border-bottom: 0.6em solid #666666;
 }
 
 #container main {
@@ -246,7 +230,6 @@ width: 100%;
 
 .meta-aside, #container main section#home ul li aside, #container main article aside {
   margin: 0.5em 0;
-  font-family: "Ruda", sans-serif;
   color: #909090;
   font-size: 0.8em;
 }
