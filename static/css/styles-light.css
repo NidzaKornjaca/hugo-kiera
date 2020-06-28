@@ -31,7 +31,7 @@ time {
 }
 
 #container > * {
-  width: 700px;
+  width: 750px;
   margin: 0 auto;
 }
 
@@ -50,6 +50,8 @@ time {
     margin: 0 1em 0 0;
   }
 }
+
+/* Navigation. */
 
 nav {
   font-family: "Roboto", sans-serif;
@@ -76,51 +78,51 @@ nav ul li a.active {
   border-bottom: 0.6em solid #666666;
 }
 
-#container main {
+main {
   flex: 1 0 0;
   line-height: 1.5;
   font-size: 1.2rem;
 }
 
-#container main section#home ul {
+#home ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-#container main section#home ul li {
+#home ul li {
   margin: 0.5em 0;
   padding-bottom: 0.5em;
 }
 
-#container main section#home ul li h2 {
+#home ul li h2 {
   margin: 0.2em 0;
 }
 
-#container main section#home span {
+#home span {
   color: #666666;
 }
 
-#container main section#list ul {
+#list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-#container main section#list ul li {
+#list ul li {
   padding: 0.5em 0;
   border-bottom: 1px solid #cecece;
 }
 
-#container main section#list ul li time, #container main section#list ul li span.count {
+#list ul li time, #list ul li span.count {
   float: right;
 }
 
-#container main section#list ul li:last-child {
+#list ul li:last-child {
   border-bottom: none;
 }
 
-#container main section.post-nav ul {
+section.post-nav ul {
   margin: 0.5em 0;
   padding: 0.5em 0 0;
   list-style: none;
@@ -130,7 +132,7 @@ nav ul li a.active {
   font-size: 0.9em;
 }
 
-#container main article > pre {
+article > pre {
   background-color: #ffffcc;
   overflow-x: auto;
   padding: 0.8em;
@@ -138,23 +140,23 @@ nav ul li a.active {
   box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
-#container main article .highlight pre {
+article .highlight pre {
   overflow-x: auto;
   font-size: 0.9em;
   padding: 0.8em;
 }
 
-#container main article pre code {
+article pre code {
   font-size: 0.9em;
 }
 
-#container main article p code {
+article p code {
   padding: 0.2em;
   background-color: #ffcccc;
   font-size: 0.9em;
 }
 
-#container main article p kbd {
+article p kbd {
   display: inline-block;
   padding: 0.2em 0.3em;
   font-size: 0.8em;
@@ -170,19 +172,19 @@ nav ul li a.active {
   box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
-#container main h1 {
+main h1 {
   margin-bottom: 1rem;
 }
 
-#container footer {
+footer {
   border-top: solid 1px #cecece;
 }
 
-#container footer h6 {
+footer h6 {
   font-size: 0.8em;
 }
 
-#container textarea, input {
+textarea, input {
 -webkit-box-align: center;
 -ms-flex-align: center;
 align-items: center;
@@ -205,7 +207,7 @@ max-width: 100%;
 width: 100%;
 }
 
-#container button {
+button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -223,24 +225,25 @@ width: 100%;
   text-align: center;
 }
 
-#container button:hover {
+button:hover {
  border: solid #cecece 2px;
  text-decoration: none;
 }
 
-.meta-aside, #container main section#home ul li aside, #container main article aside {
+.meta-aside, aside {
   margin: 0.5em 0;
-  color: #909090;
+  color: #444444;
   font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
 }
 
-.meta-aside ul, #container main section#home ul li aside ul, #container main article aside ul {
+.meta-aside ul, aside ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.meta-aside ul li, #container main section#home ul li aside ul li, #container main article aside ul li {
+.meta-aside ul li, aside ul li {
   margin: 0;
   padding: 0;
 }
@@ -363,11 +366,10 @@ table thead {
 
 blockquote {
   margin: 1em;
-  border-left: solid 0.1em #cecece;
   padding: 0.5em 2em;
   position: relative;
   background-color: #efefef;
-  box-shadow: 0 -1px 0 #bbbbbb inset;
+  box-shadow: -5px 5px 2px #666666;
 }
 
 @media only screen and (max-width: 800px) {
@@ -391,4 +393,8 @@ ul.pagination {
 
 ul.pagination li {
   padding: 0 1em;
+}
+
+.summary {
+  font-size: 0.8em;
 }
