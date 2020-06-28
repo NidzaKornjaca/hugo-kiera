@@ -84,23 +84,21 @@ main {
   font-size: 1.2rem;
 }
 
-#home ul {
+/* Large post list */
+
+.big-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-#home ul li {
+.big-list-item {
   margin: 0.5em 0;
   padding-bottom: 0.5em;
 }
 
-#home ul li h2 {
+.big-list-item h2 {
   margin: 0.2em 0;
-}
-
-#home span {
-  color: #666666;
 }
 
 #list ul {

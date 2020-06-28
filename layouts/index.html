@@ -3,12 +3,12 @@
 <section id="home">
   {{ .Content }}
   <h1>Recent</h1>
-  <ul>
+  <ul class="big-list">
     {{ $pages := where site.RegularPages "Type" "posts" }}
     {{ $paginator := .Paginate $pages }}
     {{ range $index, $page := $paginator.Pages }}
 
-    <li {{if eq $index 0}}class="first" {{end}}>
+    <li class="big-list-item">
       <h2><a href="{{ $page.Permalink }}" title="{{ $page.Title }}">{{ .Title }}</a></h2>
       {{ partial "aside" . }}
       <div class="summary">
