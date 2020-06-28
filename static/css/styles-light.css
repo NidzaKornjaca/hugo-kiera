@@ -131,7 +131,9 @@ main {
   font-size: 0.9em;
 }
 
-article > pre {
+/* Preformatted. */
+
+pre {
   background-color: #ffffcc;
   overflow-x: auto;
   padding: 0.8em;
@@ -139,23 +141,11 @@ article > pre {
   box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
-article .highlight pre {
+.highlight pre {
   overflow-x: auto;
-  font-size: 0.9em;
-  padding: 0.8em;
 }
 
-article pre code {
-  font-size: 0.9em;
-}
-
-article p code {
-  padding: 0.2em;
-  background-color: #ffcccc;
-  font-size: 0.9em;
-}
-
-article p kbd {
+kbd {
   display: inline-block;
   padding: 0.2em 0.3em;
   font-size: 0.8em;
@@ -166,7 +156,6 @@ article p kbd {
   border-width: 1px;
   border-style: solid;
   border-color: #cccccc #cccccc #bbbbbb;
-  border-image: none;
   border-radius: 3px;
   box-shadow: 0 -1px 0 #bbbbbb inset;
 }
@@ -246,6 +235,8 @@ a {
   color: #666666;
   text-decoration: none;
 }
+
+/* Images. */
 
 .image, figure img, img {
   width: 100%;
