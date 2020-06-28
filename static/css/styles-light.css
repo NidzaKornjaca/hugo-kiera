@@ -101,22 +101,24 @@ main {
   margin: 0.2em 0;
 }
 
-#list ul {
+/* Small post list. */
+
+.post-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-#list ul li {
+.post-list-item {
   padding: 0.5em 0;
   border-bottom: 1px solid #cecece;
 }
 
-#list ul li time, #list ul li span.count {
+.date-meta {
   float: right;
 }
 
-#list ul li:last-child {
+.post-list li:last-child {
   border-bottom: none;
 }
 
