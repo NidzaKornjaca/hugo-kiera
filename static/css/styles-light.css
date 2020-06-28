@@ -51,7 +51,7 @@ time {
   }
 }
 
-#container nav {
+nav {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 900;
@@ -61,18 +61,18 @@ time {
   justify-content: space-between;
 }
 
-#container nav ul {
+nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
 }
 
-#container nav ul li {
+nav ul li {
   margin-left: 1em;
 }
 
-#container nav ul li a.active {
+nav ul li a.active {
   border-bottom: 0.6em solid #666666;
 }
 
