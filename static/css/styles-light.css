@@ -61,10 +61,12 @@ nav {
   font-family: "Roboto Slab", serif;
   font-size: 1.2rem;
   font-weight: 900;
-  border-bottom: solid 3px #666666;
+  border-bottom: solid 1px #cecece;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 nav ul {
@@ -92,13 +94,13 @@ main {
 
 .big-list {
   margin: 0;
+  margin-top: 2rem;
   padding: 0;
   list-style: none;
 }
 
 .big-list-item {
   margin: 0.5em 0;
-  padding-bottom: 0.5em;
 }
 
 .big-list-item h2 {
@@ -164,8 +166,10 @@ kbd {
   box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
-main h1 {
-  margin-bottom: 1rem;
+h1 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 900;
 }
 
 .footer {
