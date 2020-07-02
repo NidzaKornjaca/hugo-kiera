@@ -79,7 +79,7 @@ nav ul li {
 }
 
 nav ul li a.active {
-  border-bottom: 0.6em solid #666666;
+    color: #555555;
 }
 
 main {
@@ -232,8 +232,12 @@ button:hover {
 }
 
 a {
-  color: #666666;
+  color: #dd2a74;
   text-decoration: none;
+}
+
+a:hover {
+  color: #555555;
 }
 
 /* Images. */
