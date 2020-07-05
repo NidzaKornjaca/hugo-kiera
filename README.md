@@ -1,5 +1,11 @@
 # Kiera Theme for Hugo
 
+Run example site:
+
+```
+hugo server -D -s exampleSite --themesDir ../../
+```
+
 Kiera is the theme specialized in presenting writing layout like long essay or technical writing.
 
 It was originally developed by [b. avianto](https://github.com/avianto/hugo-kiera) and now maintained by [funkydan2](//github.com/funkydan2/)
