@@ -16,10 +16,6 @@ time {
   font-family: "Roboto Slab", serif;
 }
 
-h1 > a, h2 > a {
-  color: #333333;
-}
-
 .site-logo {
   font-size: 2em;
   color: #333333;
@@ -66,19 +62,16 @@ nav {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
-
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
 }
-
 nav ul li {
   margin-left: 1em;
 }
-
-nav ul li a.active {
+nav ul a.active {
   color: #555555;
 }
 
@@ -99,9 +92,11 @@ main {
 .big-list-item {
   margin: 0.5em 0;
 }
-
 .big-list-item h2 {
   margin: 0.2em 0;
+}
+.big-list-item h2 a {
+  color: #333333;
 }
 
 /* Small post list. */
@@ -223,7 +218,6 @@ button:hover {
   font-size: 0.8em;
   font-family: "Roboto Slab", serif;
 }
-
 .meta-aside ul {
   margin: 0;
   padding: 0;
@@ -334,7 +328,6 @@ figure.float-right {
   margin: 0;
   float: right;
 }
-
 figure.float-right figcaption {
   margin-left: 1em;
 }
@@ -373,7 +366,6 @@ ul.pagination {
   padding: 0.5em 0;
   list-style: none;
 }
-
 ul.pagination li {
   padding: 0 1em;
 }
