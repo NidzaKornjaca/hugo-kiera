@@ -325,21 +325,11 @@ figure figcaption p {
   font-style: italic;
 }
 
-figure.full {
-  margin: 0;
-}
-
-figure.mid {
-  margin: 0;
-}
-
 figure.float {
-  margin: 0;
   float: left;
 }
 
 figure.float-right {
-  margin: 0;
   float: right;
 
   figcaption {
