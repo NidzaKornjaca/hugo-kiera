@@ -72,14 +72,12 @@ nav ul a.active {
 }
 
 main {
-  flex: 1 0 0;
   line-height: 1.5;
   font-size: 1.2rem;
 }
 
 /* Large post list */
 .big-list {
-  margin: 0;
   margin-top: 2rem;
   padding: 0;
   list-style: none;
@@ -97,22 +95,19 @@ main {
 
 /* Small post list. */
 .post-list {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
-
-.post-list-item {
+.post-list li {
   padding: 0.5em 0;
-  border-bottom: 1px solid #cecece;
+  border-bottom: 1px dashed #cecece;
+}
+.post-list li:last-child {
+  border-bottom: none;
 }
 
 .date-meta {
   float: right;
-}
-
-.post-list li:last-child {
-  border-bottom: none;
 }
 
 .post-nav ul {

@@ -84,7 +84,6 @@ nav {
 }
 
 main {
-  flex: 1 0 0;
   line-height: 1.5;
   font-size: 1.2rem;
 }
@@ -92,7 +91,6 @@ main {
 /* Large post list */
 
 .big-list {
-  margin: 0;
   margin-top: 2rem;
   padding: 0;
   list-style: none;
@@ -112,22 +110,21 @@ main {
 /* Small post list. */
 
 .post-list {
-  margin: 0;
   padding: 0;
   list-style: none;
-}
 
-.post-list-item {
-  padding: 0.5em 0;
-  border-bottom: 1px solid $color-ternary;
+  li {
+      padding: 0.5em 0;
+      border-bottom: 1px dashed $color-ternary;
+  }
+
+  li:last-child {
+      border-bottom: none;
+  }
 }
 
 .date-meta {
   float: right;
-}
-
-.post-list li:last-child {
-  border-bottom: none;
 }
 
 .post-nav ul {
