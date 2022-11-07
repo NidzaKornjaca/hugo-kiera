@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Liberation Sans", "Arial", sans-serif;
   color: #333333;
 }
 
@@ -13,7 +13,7 @@ h4,
 h5,
 h6,
 time {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", "Liberation Serif", "Times New Roman", serif;
 }
 
 .site-logo {
@@ -41,14 +41,13 @@ time {
   #container header ul {
     float: none;
   }
-
   #container header ul li {
     margin: 0 1em 0 0;
   }
 }
 /* Navigation. */
 nav {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", "Liberation Serif", "Times New Roman", serif;
   font-size: 1.2rem;
   font-weight: 900;
   border-bottom: solid 1px #cecece;
@@ -207,7 +206,7 @@ button:hover {
   margin: 0.5em 0;
   color: #555555;
   font-size: 0.8em;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", "Liberation Serif", "Times New Roman", serif;
 }
 .meta-aside ul {
   margin: 0;
@@ -256,7 +255,6 @@ a:hover {
     margin-left: -400px;
     margin-right: -400px;
   }
-
   @media only screen and (max-width: 800px) {
     .mid-image, figure.mid img, img[src*=mid] {
       width: 100%;
