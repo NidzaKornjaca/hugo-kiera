@@ -1,9 +1,15 @@
+{{ $currentPage := . }}
 </main>
     <footer class=footer>
         <h5>
             {{ .Site.Copyright | markdownify }} |
             {{ T "rendered" }} <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-            <a href="{{.Site.BaseURL}}index.xml">{{ T "subscribe" }} </a>
+            <a href="{{.Site.BaseURL}}index.xml">{{ T "subscribe" }} </a> |
+        {{ range .Site.Menus.footer }}
+            <a class="{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }}active{{end}}" href="{{ .URL | relURL }}">
+                {{ .Name }}
+            </a>
+        {{ end }}
         </h5>
     </footer>
 </div>
