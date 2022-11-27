@@ -4,6 +4,10 @@ $color-primary: #333333;
 $color-accent: #dd2a74;
 $color-secondary: #555555;
 $color-ternary: #cecece;
+$logo-font-size: 2em;
+$main-font-size: 1em;
+$large-font-size: 1.2em;
+$small-font-size: 0.9em;
 
 body {
   margin: 0;
@@ -24,7 +28,7 @@ time {
 }
 
 .site-logo {
-  font-size: 2em;
+  font-size: $logo-font-size;
   color: $color-primary;
 }
 
@@ -58,7 +62,7 @@ time {
 
 nav {
   font-family: $font-title;
-  font-size: 1.2rem;
+  font-size: $large-font-size;
   font-weight: 900;
   border-bottom: solid 1px $color-ternary;
   display: flex;
@@ -85,7 +89,7 @@ nav {
 
 main {
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: $main-font-size;
 }
 
 /* Large post list */
@@ -133,7 +137,7 @@ main {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  font-size: 0.9em;
+  font-size: $small-font-size;
 }
 
 /* Preformatted. */
@@ -142,7 +146,7 @@ pre {
   background-color: #ffffcc;
   overflow-x: auto;
   padding: 0.8em;
-  font-size: 0.9em;
+  font-size: $small-font-size;
   box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
@@ -153,7 +157,7 @@ pre {
 kbd {
   display: inline-block;
   padding: 0.2em 0.3em;
-  font-size: 0.8em;
+  font-size: $small-font-size;
   line-height: 1em;
   color: $color-secondary;
   vertical-align: middle;
@@ -224,7 +228,7 @@ button:hover {
 .meta-aside {
   margin: 0.5em 0;
   color: $color-secondary;
-  font-size: 0.8em;
+  font-size: $small-font-size;
   font-family: $font-title;
 
   ul {
@@ -321,7 +325,7 @@ figure {
 
 figure figcaption p {
   margin-top: 0.3em;
-  font-size: 0.8em;
+  font-size: $small-font-size;
   font-style: italic;
 }
 
@@ -372,5 +376,5 @@ ul.pagination {
 }
 
 .summary {
-  font-size: 0.8em;
+  font-size: $small-font-size;
 }
