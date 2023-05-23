@@ -9,7 +9,12 @@
   {{- end }}
 
   <link rel="stylesheet" href="{{ "fontawesome/css/all.min.css" | absURL }}" />
-  <link rel="stylesheet" type="text/css" href="{{ "css/styles.css" | relURL}}" />
+
+  {{ $main_options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed") }}
+  {{ $main_template := resources.Get "sass/main.scss" }}
+  {{ $main_style := $main_template | toCSS $main_options }}
+  <link rel="stylesheet" type="text/css" href="{{ $main_style.RelPermalink }}" />
+
   {{- range .Site.Params.customCSS -}}
     <link rel='stylesheet' href='{{ . | absURL }}'>
   {{- end -}}
