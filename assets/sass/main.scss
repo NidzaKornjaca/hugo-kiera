@@ -1,8 +1,9 @@
 $font-body: "Lato", "Liberation Sans", "Arial", sans-serif;
 $font-title: "Roboto Slab", "Liberation Serif", "Times New Roman", serif;
-$color-primary: #333333;
-$color-accent: #dd2a74;
-$color-secondary: #555555;
+$color-primary: #aa8575;
+$color-bg: #161111;
+$color-accent: #da8a94;
+$color-secondary: #956565;
 $color-ternary: #cecece;
 $logo-font-size: 2em;
 $main-font-size: 1em;
@@ -15,6 +16,7 @@ body {
   overflow-x: hidden;
   font-family: $font-body;
   color: $color-primary;
+  background-color: $color-bg;
 }
 
 h1,
