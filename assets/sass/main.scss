@@ -2,6 +2,7 @@ $font-body: "Lato", "Liberation Sans", "Arial", sans-serif;
 $font-title: "Roboto Slab", "Liberation Serif", "Times New Roman", serif;
 $color-primary: #aa8575;
 $color-bg: #161111;
+$color-bg-dark: #060000;
 $color-accent: #da8a94;
 $color-secondary: #956565;
 $color-ternary: #cecece;
@@ -357,8 +358,7 @@ blockquote {
   margin: 0;
   padding: 0.5em 2em;
   position: relative;
-  background-color: #efefef;
-  box-shadow: -5px 5px 2px #666666;
+  border-left: 3px double $color-secondary;
 }
 
 dl dd {
