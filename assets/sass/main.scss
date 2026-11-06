@@ -95,25 +95,6 @@ main {
   font-size: $main-font-size;
 }
 
-/* Large post list */
-
-.big-list {
-  margin-top: 2rem;
-  padding: 0;
-  list-style: none;
-}
-
-.big-list-item {
-  margin: 0.5em 0;
-
-  h2 {
-      margin: 0.2em 0;
-      a {
-          color: $color-primary;
-      }
-  }
-}
-
 /* Small post list. */
 
 .post-list {
