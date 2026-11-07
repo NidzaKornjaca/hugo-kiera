@@ -1,12 +1,13 @@
 {{ define "main" }}
 
 <section>
+  <div class="article-header">
     {{ if eq .Data.Singular "tag" }}
-        <h1>#{{ .Title | lower }}</h1>
+        <h1 class="title">#{{ .Title | lower }}</h1>
     {{ else }}
-        <h1>{{ .Title }}</h1>
+        <h1 class="title">{{ .Title }}</h1>
     {{ end }}
-
+  </div>
     {{ .Content }}
 
     {{ range (.Paginate (.Data.Pages.GroupByDate "2006")).PageGroups  }}

@@ -1,25 +1,9 @@
 <aside class="meta-aside">
-    <ul>
-        <li>
-            <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format .Site.Params.dateFormat }}</time>
-            -
-        <span>{{ T "readingTime" .ReadingTime }}</span>
-        </li>
-        {{ if .Params.categories }}
-        <li>
-            {{ T "categories" }}
-                {{ range $i, $c := .Params.categories }}
-                    <a href="{{ relLangURL ( printf "categories/%s" ( $c | urlize ) ) }}">{{ $c }}</a>
-                {{ end }}
-        </li>
-        {{ end }}
-
-        {{ if .Params.tags }}
-        <li>
-                {{ range $i, $t := .Params.tags }}
-                    <a href="{{ relLangURL ( printf "tags/%s" ( $t | urlize ) ) }}">#{{ $t }}</a>
-                {{ end }}
-        </li>
-        {{ end }}
-    </ul>
+  <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format .Site.Params.dateFormat }}</time>
+  {{ if .Params.tags }}
+  |
+    {{ range $i, $t := .Params.tags }}
+        <a href="{{ relLangURL ( printf "tags/%s" ( $t | urlize ) ) }}">#{{ $t }}</a>
+    {{ end }}
+  {{ end }}
 </aside>
